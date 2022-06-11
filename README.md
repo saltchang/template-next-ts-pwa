@@ -70,7 +70,7 @@ Run the Production package:
 yarn start
 ```
 
-Run lintting:
+Run linting:
 
 ```bash
 yarn lint

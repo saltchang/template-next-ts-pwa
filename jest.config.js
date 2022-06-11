@@ -1,6 +1,7 @@
 /** @type {import('ts-jest/dist/types').InitialOptionsTsJest} */
 
 const nextJest = require('next/jest');
+
 const createJestConfig = nextJest({
   dir: './',
 });

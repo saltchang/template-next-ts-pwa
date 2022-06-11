@@ -1,16 +1,16 @@
 {
   "name": "template-next-ts-pwa",
   "version": "0.1.0",
-  "private": true,
   "license": "MIT",
+  "private": true,
   "scripts": {
+    "prepare": "husky install",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "lint-fix": "next lint --fix",
     "format": "prettier --write '**/*.{js,ts,jsx,tsx,cjs,json,css,scss,html,md,yml}'",
-    "prepare": "husky install",
     "test": "jest --watch",
     "test-no-watch": "jest"
   },
@@ -43,6 +43,7 @@
     "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-react-hook-form": "^0.2.4",
     "eslint-plugin-react-hooks": "^4.5.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
     "eslint-plugin-testing-library": "^5.3.1",
     "eslint-plugin-unicorn": "^42.0.0",
     "husky": "^8.0.0",

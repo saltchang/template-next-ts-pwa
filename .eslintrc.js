@@ -41,13 +41,17 @@ module.exports = {
     'react-hook-form',
     'react-hooks',
     'react',
+    'simple-import-sort',
     'testing-library',
     'unicorn',
   ],
   rules: {
     eqeqeq: ['error', 'smart'],
+    'import/first': 'error',
+    'import/newline-after-import': 'error',
+    'import/no-duplicates': 'error',
     'linebreak-style': ['error', 'unix'],
-    'prefer-const': ['error'],
+    'object-curly-spacing': ['error', 'never'],
     'prefer-arrow/prefer-arrow-functions': [
       'warn',
       {
@@ -55,6 +59,23 @@ module.exports = {
         classPropertiesAllowed: false,
         disallowPrototype: true,
         singleReturnOnly: false,
+      },
+    ],
+    'prefer-const': ['error'],
+    'simple-import-sort/exports': 'error',
+    'simple-import-sort/imports': [
+      'error',
+      {
+        groups: [
+          ['^react', '^react-.*$'], // React
+          [
+            '^@\\w', // Packages that start with '@'
+            '^', // Anything else
+          ],
+          ['^@/'], // Absolute imports
+          ['^\\.'], // Packages that start with '.'
+          ['^\\u0000'], // Side effect imports
+        ],
       },
     ],
     'unicorn/prevent-abbreviations': 'off',

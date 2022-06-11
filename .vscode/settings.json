@@ -1,10 +1,7 @@
 {
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
+  "editor.formatOnSave": false,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true,
-  "editor.formatOnSaveMode": "modificationsIfAvailable",
+  "editor.codeActionsOnSave": ["source.fixAll.format", "source.fixAll.eslint"],
   "eslint.validate": [
     "javascript",
     "javascriptreact",
@@ -15,34 +12,6 @@
     "*.env": "env",
     "*.env.*": "env"
   },
-  "importSorter.generalConfiguration.sortOnBeforeSave": true,
-  "importSorter.importStringConfiguration.maximumNumberOfImportExpressionsPerLine.count": 80,
-  "importSorter.importStringConfiguration.maximumNumberOfImportExpressionsPerLine.type": "newLineEachExpressionAfterCountLimitExceptIfOnlyOne",
-  "importSorter.importStringConfiguration.tabSize": 2,
-  "importSorter.importStringConfiguration.trailingComma": "multiLine",
-  "importSorter.sortConfiguration.customOrderingRules.rules": [
-    {
-      "orderLevel": 50,
-      "regex": "^$",
-      "type": "importMember"
-    },
-    {
-      "orderLevel": 10,
-      "regex": "^react[[-]?.*]*$"
-    },
-    {
-      "orderLevel": 20,
-      "regex": "^[^.@]"
-    },
-    {
-      "orderLevel": 30,
-      "regex": "^[@]"
-    },
-    {
-      "orderLevel": 40,
-      "regex": "^[.]"
-    }
-  ],
   "search.exclude": {
     "node_modules": true
   },

@@ -9,7 +9,7 @@ import Document, {
 class DocumentLayout extends Document {
   static async getInitialProps(context: DocumentContext) {
     const initialProps = await Document.getInitialProps(context);
-    return { ...initialProps };
+    return {...initialProps};
   }
 
   render() {

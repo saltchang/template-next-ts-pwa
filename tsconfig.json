@@ -1,4 +1,3 @@
-// https://www.typescriptlang.org/tsconfig
 {
   "compilerOptions": {
     "allowJs": true,

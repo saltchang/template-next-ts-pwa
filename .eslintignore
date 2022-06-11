@@ -25,3 +25,9 @@
 /public/**/*.map
 /public/**/workbox-*.js
 /public/**/sw.js
+
+# typescript
+*.tsbuildinfo
+
+# public
+/public/*.js

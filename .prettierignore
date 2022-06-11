@@ -35,3 +35,6 @@ yarn-error.log*
 
 /public/**/*.map
 /public/**/workbox-*.js
+
+# public
+/public/*.js

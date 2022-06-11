@@ -2,11 +2,13 @@
 . "$(dirname "$0")/_/husky.sh"
 
 printf "\n"
-printf "=== Run test ===\n"
+printf "=== Pre-commit check start ===\n"
 printf "\n"
-yarn test-no-watch
-printf "\n"
-printf "=== Run lint and format ===\n"
+printf "> run linting and formating...\n"
 printf "\n"
 npx lint-staged
+printf "\n"
+printf "> run test...\n"
+printf "\n"
+yarn test
 printf "\n"

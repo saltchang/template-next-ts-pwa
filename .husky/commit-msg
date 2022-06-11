@@ -1,0 +1,8 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+printf "\n"
+printf "=== Commit message check start ===\n"
+printf "\n"
+npx --no -- commitlint --edit "${1}"
+printf "\n"

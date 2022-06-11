@@ -1,6 +1,6 @@
 import {render, screen} from '@testing-library/react';
 
-import HomePage from './index';
+import HomePage from '@/pages';
 
 import '@testing-library/jest-dom';
 

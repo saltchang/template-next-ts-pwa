@@ -35,3 +35,9 @@ yarn-error.log*
 
 /public/**/*.map
 /public/**/workbox-*.js
+
+# typescript
+*.tsbuildinfo
+
+# public
+/public/*.js

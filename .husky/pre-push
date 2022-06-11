@@ -1,0 +1,12 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+printf "\n"
+printf "=== Pre-push check start ===\n"
+printf "\n"
+printf "> build the project...\n"
+printf "\n"
+yarn build
+printf "\n"
+printf "> built successfully, start to push...\n"
+printf "\n"

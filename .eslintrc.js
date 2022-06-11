@@ -100,11 +100,12 @@ module.exports = {
     {
       files: [
         '.eslintrc.js',
-        '.prettierrc.js',
         '.lintstagedrc.js',
+        '.prettierrc.js',
         'babel.config.js',
-        'next.config.js',
+        'commitlint.config.js',
         'jest.config.js',
+        'next.config.js',
       ],
       rules: {
         'unicorn/prefer-module': 'off',

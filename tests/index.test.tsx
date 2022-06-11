@@ -6,6 +6,8 @@ import '@testing-library/jest-dom';
 
 test('renders homepage', () => {
   render(<HomePage />);
-  const homePageText = screen.getByText(/home page/i);
+  const homePageText = screen.getByText(
+    /a project template for next\.js pwa with typescript/i
+  );
   expect(homePageText).toBeInTheDocument();
 });
